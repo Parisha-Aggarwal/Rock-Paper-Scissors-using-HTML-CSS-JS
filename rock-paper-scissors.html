@@ -127,10 +127,7 @@
             if(result==='draw')
             result+=' tie'
             score.innerHTML='Player: [' +winnerScores[0]+ ']  Computer:[' +winnerScores[1]+ ']'
-            messenger('Player: <strong>' + playerSelection + '</strong> Computer: <strong>' + computerSelection + '</strong><br>' + result)
-        }
-        function messenger(selectionMessage){
-            message.innerHTML = selectionMessage;
+            message.innerHTML ='Player: <strong>' + playerSelection + '</strong> Computer: <strong>' + computerSelection + '</strong><br>' + result
         }
         function checkwinner(player,computer){
             if(player==="Rock"){
